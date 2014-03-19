@@ -22,6 +22,16 @@
 
 	ga('create', 'UA-21837222-1', 'hellomatthew.com');
 	ga('send', 'pageview');
+	
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-21837222-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  	})();
 
 	</script>
 	   	
@@ -34,8 +44,8 @@
       		<h2>
       		<span class="hdln">Hello,</span>
       		<ul>
-      		<li><a href="mailto:mattandrws@gmail.com">Matthew Andrews</a></li>
-			<li><a href="https://dl.dropboxusercontent.com/u/33512/MA2014.pdf" target="_blank">Creative Director</a> </li>
+      		<li><a href="mailto:mattandrws@gmail.com" onClick="_gaq.push(['_trackEvent', 'Contact', 'Click', 'Email MA']);">Matthew Andrews</a></li>
+			<li><a href="https://dl.dropboxusercontent.com/u/33512/MA2014.pdf" target="_blank" onClick="_gaq.push(['_trackEvent', 'Portfolio', 'Click', 'View Portfolio']);">Creative Director</a> </li>
 			<li> <a href="http://instagram.com/hellomatthew" target="_blank">Surfer & Traveler</a></li>
 			<li><a href="http://agencynowhere.com" target="_blank">Brooklyn  & Nowhere</a></li>
       		</ul>
