@@ -17,8 +17,8 @@ body {
 
 h2 {font-size: 24px; line-height:28px;}
 
-a, a:visited, a:active {text-decoration:none; color:#fff;}
-a:hover {text-decoration:none; color:#ffcccc;}
+a, a:visited, a:active {text-decoration:none; color:#fff;  border-bottom: 1px #282828 dotted;}
+a:hover {text-decoration:none; color:#ffcccc; border-bottom: 1px #ffcccc dotted;}
 
 ul {
 	list-style-type: none;
@@ -26,6 +26,8 @@ ul {
 	margin: 0px;
 	margin-top:40px;
 }
+
+li { margin-bottom:2px;}
 
 
 .hdln {
